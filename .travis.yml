@@ -17,7 +17,7 @@ addons:
     - gcc-4.8
     - g++-4.8
 script:
-- sbt build
+- sbt html epub
 after_success:
 - echo -e "Host github.com\n\tStrictHostKeyChecking no\nIdentityFile ~/.ssh/deploy.key\n"
   >> ~/.ssh/config
